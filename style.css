@@ -220,22 +220,36 @@ input[type="text"]:disabled { opacity: 0.7; }
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 10px;
 }
 .all-persons-row {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 6px;
+  flex-wrap: wrap;
 }
 .all-persons-row label {
-  width: 92px;
-  font-size: 12.5px;
+  width: 78px;
+  flex-shrink: 0;
+  font-size: 12px;
   font-weight: bold;
   color: var(--muted);
   text-align: right;
 }
-.all-persons-row input { flex: 1; font-size: 14px; padding: 8px 10px; }
-.all-persons-row .fb { width: 30px; font-size: 15px; text-align: center; }
+.all-persons-row input {
+  flex: 1 1 90px;
+  min-width: 0;
+  font-size: 13.5px;
+  padding: 8px 8px;
+}
+.all-persons-row .fb {
+  flex-shrink: 0;
+  width: 100%;
+  font-size: 11.5px;
+  font-weight: bold;
+  text-align: left;
+  padding-left: 84px;
+}
 
 .result-label {
   padding: 0 22px 6px;
